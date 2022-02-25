@@ -1,0 +1,17 @@
+header {
+  background-color: black;
+  color: white;
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  margin: 0;
+}
