@@ -1,71 +1,80 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Las propiedades estan ordenadas en orden alfabetico */
+/* Uso de la metodologia BEM */
 
 /* Header */
 
 .header {
+  align-items: center;
   background-color: white;
   display: flex;
-  align-items: center;
+  width: 100vw;
 }
 
-.header__img-container img {
+.header__img-container {
+  margin: 0 0 0 30px;
+}
+
+.header__img {
   width: 100px;
-  margin-left: 20px;
 }
 
-.header__nav-bar {
+.nav {
   margin: 0 auto;
 }
 
-.header__nav-bar li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 1rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
+.nav__list {
+  padding: 0;
 }
 
-.header__nav-bar li:hover {
+.nav__item {
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 30px;
+}
+
+.nav__item:hover {
   border-bottom: 1px solid black;
 }
 
 /* Primera seccion */
 
-.main__first-section {
-  background-image: url(/assets/img/section1.jfif);
+.first-section {
+  align-items: center;
+  background-image: url(/assets/img/section1.jfif); /* TODO: CORREGIR IMAGEN DE FONDO */
   background-size: cover;
-  height: 600px;
   display: flex;
   flex-direction: column;
+  height: 600px;
   justify-content: center;
-  align-items: center;
 }
 
-.main__first-section p:nth-child(1) {
+.first-section__phrase {
+  color: white;
   font-size: 4rem;
   font-family: "Rage";
-  color: white;
+  margin: 0 0 20px 0;
 }
 
-.main__first-section h1 {
+.first-section__name {
+  color: white;
   font-size: 5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
   letter-spacing: 24px;
+  margin: 20px 0;
 }
 
 .origin-info {
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 /* Segunda seccion  */
 
-.main__second-section {
+.second-section {
   background-color: #272727;
   height: 600px;
   display: flex;
@@ -77,24 +86,23 @@
 .origin-info {
   color: white;
   margin-bottom: 5px;
-  text-align: center;
 }
 
-.main__second-section h3 {
+.second-section__middle-title {
   color: white;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
 }
 
-.second-section__info {
+.second-section__text {
   color: white;
   text-align: center;
   margin-bottom: 25px;
   width: 40%;
 }
 
-.main__second-section a {
+.second-section__button {
   padding: 11px 50px;
   text-decoration: none;
   color: white;
@@ -105,21 +113,21 @@
   font-size: 0.9rem;
 }
 
-.main__second-section a:hover {
+.second-section__button:hover {
   background-color: white;
   color: black;
 }
 
 /* Tercera seccion */
 
-.main__third-section {
+.third-section {
   background-color: white;
   height: 600px;
   display: flex;
   justify-content: center;
 }
 
-.main__third-section article {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,27 +136,51 @@
   margin-bottom: 50px;
 }
 
-.main__third-section figure {
+.card__img-container, .card__title {
   margin-bottom: 30px;
 }
 
-.main__third-section h4 {
-  margin-bottom: 30px;
-}
-
-.main__third-section p {
-  padding: 0 80px;
-}
-
-.main__third-section img {
+.card__img {
   width: 100px;
 }
 
-.main__fourth-section {
+.card__text {
+  padding: 0 80px;
+}
+
+/* Cuarta seccion */
+
+.fourth-section {
   background-color: black;
   height: 800px;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin: 0 100px;
+}
+
+.schedule-container span {
+  font-size: 1.5rem;
+}
+
+.schedule-container__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-info-container :nth-child(3),
+.schedule-info-container :nth-child(4) {
+  border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+.fourth-section__calendar {
+  width: 300px;
 }
