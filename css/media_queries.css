@@ -6,7 +6,7 @@
     display: none;
   }
   .header {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -16,7 +16,7 @@
   }
   .schedule-info-container,
   .fourth-section__calendar-container {
-  margin: 20px auto;
+  margin: 0 auto 20px ;
   }
   .fourth-section__calendar-container {
     width: 50%;
@@ -43,6 +43,10 @@
   .schedule-info-container {
     align-items: center;
     text-align: center;
+    width: 90%;
+  }
+  .story-container__text {
+    width: 90%;
   }
   .schedule-info-container__information {
     text-align: center;
