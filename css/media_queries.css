@@ -1,0 +1,50 @@
+/* Hasta 362 pixeles de ancho no hay problemas */
+
+@media (max-width: 898px) {
+
+  .nav {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 771px) {
+  .schedule-container {
+    flex-direction: column;
+  }
+  .schedule-info-container,
+  .fourth-section__calendar-container {
+  margin: 20px auto;
+  }
+  .fourth-section__calendar-container {
+    width: 50%;
+  }
+  .fourth-section__calendar-img {
+    width: 100%;
+  }
+
+}
+@media (max-width: 790px) {
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 710px) {
+  .schedule-info-container__text {
+    flex-direction: column;
+  }
+  .schedule-info-container {
+    align-items: center;
+    text-align: center;
+  }
+  .schedule-info-container__information {
+    text-align: center;
+  }
+}
