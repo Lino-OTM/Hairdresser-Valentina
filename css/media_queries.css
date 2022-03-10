@@ -1,7 +1,6 @@
-/* Hasta 362 pixeles de ancho no hay problemas */
+/* Hasta 300 pixeles de ancho no hay problemas */
 
 @media (max-width: 898px) {
-
   .nav {
     display: none;
   }
@@ -10,22 +9,6 @@
   }
 }
 
-@media (max-width: 771px) {
-  .schedule-container {
-    flex-direction: column;
-  }
-  .schedule-info-container,
-  .fourth-section__calendar-container {
-  margin: 0 auto 20px ;
-  }
-  .fourth-section__calendar-container {
-    width: 50%;
-  }
-  .fourth-section__calendar-img {
-    width: 100%;
-  }
-
-}
 @media (max-width: 790px) {
   .articles-container {
     flex-direction: column;
@@ -34,21 +17,27 @@
   .card {
     width: 80%;
   }
-}
 
-@media (max-width: 710px) {
-  .schedule-info-container__text {
+  .schedule-container {
     flex-direction: column;
   }
   .schedule-info-container {
+    flex-direction: column;
     align-items: center;
     text-align: center;
     width: 90%;
   }
-  .story-container__text {
-    width: 90%;
+  .schedule-info-container__text {
+    flex-direction: column;
   }
-  .schedule-info-container__information {
-    text-align: center;
+  .fourth-section__calendar-container {
+    width: 50%;
+  }
+  .fourth-section__calendar-img {
+    width: 100%;
+  }
+  .schedule-info-container,
+  .fourth-section__calendar-container {
+    margin: 0 auto 20px;
   }
 }
