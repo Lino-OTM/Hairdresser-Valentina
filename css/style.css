@@ -119,7 +119,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
   padding: 100px 0;
 }
 
@@ -129,26 +129,9 @@ html {
 
 .story-container__middle-title {
   color: #ffffff;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.story-container__button {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  padding: 11px 50px;
-  text-decoration: none;
-}
-
-.story-container__button:hover {
-  background-color: #ffffff;
-  color: black;
-}
-
 /* Tercera seccion */
 
 .third-section {
@@ -173,6 +156,7 @@ html {
 .card__img-container,
 .card__title {
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .card__img {
@@ -184,6 +168,7 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 /* Cuarta seccion */
@@ -209,12 +194,17 @@ html {
 }
 
 .schedule-info-container span {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
 }
 
 .schedule-info-container__text {
   display: flex;
   justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.schedule-info-container__information {
+  font-size: 1.6rem;
 }
 
 .schedule-info-container :nth-child(3),
