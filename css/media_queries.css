@@ -1,12 +1,36 @@
-/* Hasta 300 pixeles de ancho no hay problemas */
+/* Hasta 320 pixeles de ancho no hay problemas */
 
-@media (max-width: 898px) {
-  .nav {
-    display: none;
-  }
+@media (max-width: 735px) {
+
   .header {
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
   }
+  .nav {
+    width: 100%;
+  }
+  .nav__list {
+    display: none;
+    text-align: center;
+    padding: 0;
+  }
+  .nav__list.active{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+  }
+  .nav__item {
+    width: 100%;
+    padding: 3px 0;
+  }
+  .nav__item:hover {
+    border-bottom: none;
+    background-color: rgb(175, 175, 175);
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+
 }
 
 @media (max-width: 790px) {
