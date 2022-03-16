@@ -25,7 +25,10 @@
   }
   .nav__item:hover {
     border-bottom: none;
-    background-color: rgb(175, 175, 175);
+    background-color: #000000;
+  }
+  .nav__item a:hover {
+    color: #FFFFFF;
   }
   .hamburger-menu {
     display: flex;
@@ -54,14 +57,8 @@
   .schedule-info-container__text {
     flex-direction: column;
   }
-  .fourth-section__calendar-container {
-    width: 50%;
-  }
-  .fourth-section__calendar-img {
-    width: 100%;
-  }
   .schedule-info-container,
-  .fourth-section__calendar-container {
-    margin: 0 auto 20px;
+  .calendar {
+    margin: 0 auto 50px;
   }
 }
