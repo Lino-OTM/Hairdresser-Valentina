@@ -1,6 +1,3 @@
-/* Las propiedades estan ordenadas en orden alfabetico */
-/* Uso de la metodologia BEM */
-
 @import url("https://fonts.googleapis.com/css2?family=Taprom&display=swap");
 
 html {
@@ -12,11 +9,11 @@ html {
 
 .header {
   align-items: center;
-  background-color: #fffbf4;
+  background-color: #eeeeee;
   display: flex;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 50;
 }
 
 .header__img-container {
@@ -57,7 +54,7 @@ html {
   flex-direction: column;
   height: 30px;
   justify-content: space-between;
-  position:absolute;
+  position: absolute;
   right: 2rem;
   top: 2.8rem;
   width: 40px;
@@ -92,25 +89,25 @@ html {
 
 .store-name-container__phrase {
   color: #ffffff;
-  font-size: 6rem;
   font-family: "Taprom";
+  font-size: 6rem;
   margin: 0;
 }
 
 .store-name-container__name {
   color: #ffffff;
-  margin: 30px 0;
-  font-size: 5vw;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vw;
   letter-spacing: 2rem;
+  margin: 30px 0;
   padding-left: 2rem;
 }
 
 .origin-info {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 /* Segunda seccion  */
@@ -119,36 +116,37 @@ html {
   background-color: #272727;
 }
 .customers-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 100px 0;
 }
 
 .customers-container__middle-title {
   color: #ffffff;
-  font-size: 4rem;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
   letter-spacing: 2px;
 }
 
 .swiper {
-  border: 6px solid #FFFFFF;
-  width: 25%;
+  border: 6px solid #ffffff;
   min-width: 290px;
+  width: 25%;
 }
 
 .swiper-slide img {
   width: 100%;
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-  color: #FFFFFF;
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #ffffff;
 }
 
 .swiper .swiper-pagination-bullet-active {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 /* Tercera seccion */
@@ -174,8 +172,8 @@ html {
 
 .card__img-container,
 .card__title {
-  margin-bottom: 10px;
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .card__img {
@@ -185,9 +183,9 @@ html {
 .card__text {
   color: rgb(126, 126, 126);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  font-size: 1.8rem;
 }
 
 /* Cuarta seccion */
@@ -217,8 +215,8 @@ html {
 
 .schedule-info-container__text {
   display: flex;
-  justify-content: space-between;
   font-size: 1.8rem;
+  justify-content: space-between;
 }
 
 .schedule-info-container__information {
@@ -231,39 +229,38 @@ html {
 }
 
 .calendar {
-  margin-left: 150px;
-  width: 300px;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
   border-radius: 8px;
-  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   font-size: 1.5rem;
+  margin-left: 150px;
+  overflow: hidden;
+  width: 300px;
 }
 
 .calendar-picture {
-  position: relative;
+  background: #262626 url("../assets/img/calendario.jpg") no-repeat center/cover;
+  box-sizing: border-box;
+  color: #ffffff;
   height: 200px;
   padding: 20px;
-  color: #FFFFFF;
-  background: #262626 url("../assets/img/calendario.jpg") no-repeat center/cover;
+  position: relative;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
 }
 
 .calendar-picture::before {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
   content: "";
-  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   position: absolute;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0 , 0.1));
 }
 
 .calendar-picture h2 {
   margin: 0;
-
 }
 
 .calendar-picture h3 {
@@ -272,46 +269,117 @@ html {
 }
 
 .calendar__date {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-  grid-gap: 10px;
   box-sizing: border-box;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  padding: 20px;
 }
 
 .calendar__day {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  height: 25px;
+  display: flex;
+  color: #000000;
   font-weight: 600;
-  color: #262626;
+  height: 25px;
+  justify-content: center;
 }
 
 .calendar__day:nth-child(7) {
-  color: #ff6c32;
+  color: #ff3232;
 }
 
 .calendar__number {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  color: #000000;
+  display: flex;
   height: 25px;
-  color: #262626;
+  justify-content: center;
 }
 
 .calendar__number:nth-child(7n) {
-  color: #FF685D;
-  font-weight: 700; 
+  color: #ff3232;
+  font-weight: 700;
 }
 
 .calendar__number--current,
 .calendar__number:hover {
-  background-color: #242424;
-  color: #FFFFFF;
-  font-weight: 700;
+  background-color: #1a1a1a;
+  color: #145461;
   cursor: pointer;
+  font-weight: 700;
 }
 
 /* Seccion de contacto */
 
+.contact-body {
+  align-items: center;
+  background: url("../assets/img/contact-background.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.blur {
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.contact-container {
+  background-color: rgba(190, 190, 190, 0.52);
+  border-radius: 100px;
+  display: flex;
+  max-width: 800px;
+  padding-bottom: 25px;
+}
+
+.contact-container__whtsp,  /* Contenedor imagen + link */
+.contact-container__fb {
+  text-align: center;
+  margin: 0 30px;
+}
+
+.contact-container__image { /* Contenedor figure */
+  width: 100%;
+  margin: 30px auto;
+}
+
+.contact-container__image img {
+  width: 100%;
+}
+
+.contact-button {
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 4rem;
+  width: 200px;
+  height: 200px;
+}
+
+.button--green {
+  background-color: #00b950;
+}
+
+.button--blue {
+  background-color: #1e4ba0;
+}
+
+.home-button {
+  font-size: 3rem;
+  color: #FFFFFF;
+  background-color: #3b3b3b;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
