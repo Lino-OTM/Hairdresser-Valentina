@@ -1,7 +1,7 @@
-var h2 = document.querySelector(".calendar-picture h2");
-var h3 = document.querySelector(".calendar-picture h3");
+let h2 = document.querySelector(".calendar-picture h2");
+let h3 = document.querySelector(".calendar-picture h3");
 
-var monthArr = [
+let monthArr = [
   "Enero",
   "Febrero",
   "Marzo",
@@ -16,7 +16,7 @@ var monthArr = [
   "Diciembre",
 ];
 
-var dayArr = [
+let dayArr = [
   "Domingo",
   "Lunes",
   "Martes",
@@ -26,7 +26,7 @@ var dayArr = [
   "Sabado",
 ];
 
-var day31MonthArr = [
+let day31MonthArr = [
   "Enero",
   "Marzo",
   "Mayo",
@@ -36,20 +36,20 @@ var day31MonthArr = [
   "Diciembre",
 ];
 
-var d = new Date();
+let d = new Date();
 
-var obj = getDate();
+let obj = getDate();
 
 generateCalendar();
 
 function getDate() {
-  var month = d.getMonth();
+  let month = d.getMonth();
   month = monthArr[month];
 
-  var day = d.getDay();
+  let day = d.getDay();
   day = dayArr[day];
 
-  var date = d.getDate();
+  let date = d.getDate();
 
   h2.innerHTML = date + ", " + day;
   h3.innerHTML = month;
@@ -58,7 +58,7 @@ function getDate() {
 }
 
 function generateCalendar() {
-  var days;
+  let days;
 
   if (obj.m === "Febrero" && obj.yr % 4 !== 0) {
     days = 28;
@@ -70,7 +70,7 @@ function generateCalendar() {
     days = 30;
   }
 
-  var LocalDayArr = [
+  let LocalDayArr = [
     "Lunes",
     "Martes",
     "Miercoles",
@@ -80,18 +80,18 @@ function generateCalendar() {
     "Domingo",
   ];
 
-  var startOfMonth = moment().clone().startOf("month").format("dddd");
+  let startOfMonth = moment().clone().startOf("month").format("dddd");
 
-  var dayIndex = LocalDayArr.indexOf(startOfMonth);
+  let dayIndex = LocalDayArr.indexOf(startOfMonth);
 
-  for (var j = 0; j < dayIndex; j++) {
-    var element = document.createElement("div");
+  for (let j = 0; j < dayIndex; j++) {
+    let element = document.createElement("div");
     element.className = "calendar__number_empty";
     document.getElementById("lc").appendChild(element);
   }
 
-  for (var k = 1; k <= days; k++) {
-    var element = document.createElement("div");
+  for (let k = 1; k <= days; k++) {
+    let element = document.createElement("div");
     obj.dt === k
       ? (element.className = "calendar__number calendar__number--current")
       : (element.className = "calendar__number");

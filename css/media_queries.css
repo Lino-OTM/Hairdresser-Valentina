@@ -7,6 +7,7 @@
   }
   .nav {
     width: 100%;
+    position: static;
   }
   .nav__list {
     display: none;
@@ -62,16 +63,5 @@
   .schedule-info-container,
   .calendar {
     margin: 0 auto 50px;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact-container {
-    flex-direction: column;
-    border-radius: 10px;
-    max-width: 320px;
-  }
-  .contact-button {
-    font-size: 3rem;
   }
 }
